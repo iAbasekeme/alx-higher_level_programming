@@ -7,4 +7,4 @@ if num > 5:
 elif num == 0:
     print(f'Last digit of {number} is {num:d} and is 0')
 else:
-    print(f'Last digit of {number} is {num:d} and is less than 6 and not 0\n')
+    print(f'Last digit of {number} is {num:d} and is less than 6 and not 0')
