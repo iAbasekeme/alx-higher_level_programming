@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-for num in range(100):
-    formatted_input = "{:02}".format(num)
-    if num < 99:
-        print("{}".format(formatted_input), end=", ")
+for i in range(100):
+    if i < 99:
+        print("{:02}".format(i), end= ", ")
     else:
-        print("{}".format(formatted_input))
+        print("{:02}".format(i))
