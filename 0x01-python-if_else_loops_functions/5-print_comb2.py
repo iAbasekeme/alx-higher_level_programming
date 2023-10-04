@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-for i in range(100):
-    print("{}".format(i).zfill(2), end=", ")
+for num in range(100):
+    formatted_input = "{:02}".format(num)
+    if num < 99:
+        print("{}".format(formatted_input), end=", ")
+    else:
+        print("{}".format(formatted_input))
