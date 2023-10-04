@@ -10,7 +10,7 @@ def uppercase(str):
             uppercase_char = i  # Keep non-lowercase characters unchanged
         # Append the uppercase character to the result string
         uppercased_string += uppercase_char
-    print("{}".format(str), end="")
+    print("{}".format(i), end="")
 
 
 print("")
