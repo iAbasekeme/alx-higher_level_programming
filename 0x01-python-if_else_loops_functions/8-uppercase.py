@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def upperacse(c):
     uppercased_string = ''
     for i in c:
