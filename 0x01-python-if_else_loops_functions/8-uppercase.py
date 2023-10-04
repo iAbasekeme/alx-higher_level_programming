@@ -1,5 +1,5 @@
 def upperacse(c):
-    uppercased_string = ''  # initialize an empty string to store the uppercase version
+    uppercased_string = ''
     for i in c:
         if ord(i) >= 97 and ord(i) <= 122:  # check if the character is a lowercase
             # convert to uppercase
