@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+def square_matrix_simple(matrix=[]):
+    if not matrix:
+        return None
+    matrix_row = []
+
+    for row in matrix:
+        matrix_col = []
+        for i in row:
+            print(i)
+            matrix_col.append(i ** 2)
+        matrix_row.append(matrix_col)
+    return matrix_row
