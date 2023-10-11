@@ -4,5 +4,5 @@ def search_replace(my_list, search, replace):
         return None
     dupl_list = list(my_list)
 
-    new_list = [replace if x == 2 else x for x in dupl_list]
+    new_list = [replace if x == search else x for x in dupl_list]
     return new_list
