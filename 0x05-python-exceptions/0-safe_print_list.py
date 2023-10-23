@@ -3,13 +3,13 @@
 def safe_print_list(my_list=[], x=0):
     """A function that prints x elements of a list"""
     try:
-        rt = my_list[:x]
         count = 0
-        for i in rt:
+        for i in my_list:
+            if count >= x:
+                break
             print(i, end="")
             count += 1
         print()
-        return count
-    except IndexError:
-        print("an Indexerror occured")
-        return 0
+    except Exception as e:
+        print("An error occurred:{}", format(e))
+    return count
