@@ -7,4 +7,4 @@ class Square:
     an instance of the Square class"""
 
     def __init__(self, size):
-        self._size = size
+        self.__size = size
