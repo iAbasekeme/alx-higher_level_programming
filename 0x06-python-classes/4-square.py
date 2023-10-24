@@ -12,14 +12,18 @@ class Square:
         self.__size = size
 
     @property
-    def area(self):
-        """This method returns the current square data"""
-        return self.__size * self.__size
+    def size(self):
+        """This getter method returns the current data"""
+        return self.__size
 
-    @area.setter
-    def area(self, value):
+    @size.setter
+    def size(self, value):
+        """This is a setter method"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = int(value)
+        self.__size = value
+
+    def area(self):
+        return self.__size ** 2
