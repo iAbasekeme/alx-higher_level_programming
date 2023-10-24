@@ -4,7 +4,7 @@ def best_score(a_dictionary):
         return None
     else:
         # this is possible because max operates on values
-        max_values = max(a_dictionary.keys())
+        max_values = max(a_dictionary)
     if max_values is None:
         return None
     else:
