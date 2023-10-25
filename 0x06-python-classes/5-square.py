@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""This is a module that writes a class square """
+
+
 class Square:
     """This is a class that initializes
     an instance of the Square class and raises errors
