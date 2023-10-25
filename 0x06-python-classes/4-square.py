@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """This is a module that defines a module base on 2-square"""
 
 
