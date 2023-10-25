@@ -33,4 +33,4 @@ class Square:
         else:
             for _ in range(self.size):
                 # this prints (#) self.size times for each run
-                print("#"*self.size)
+                print("{}".format("#"*self.size))
