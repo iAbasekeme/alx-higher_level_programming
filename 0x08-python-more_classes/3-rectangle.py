@@ -84,6 +84,8 @@ class Rectangle:
             return ""
         else:
             ty = ''
-            for _ in range(self.__height):
-                ty += '#' * self.__width + '\n'
+            for i in range(self.__height):
+                ty += '#' * self.__width
+                if i != (self.__height - 1):
+                    ty += "\n"
             return ty
