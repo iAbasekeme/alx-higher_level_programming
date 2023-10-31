@@ -21,13 +21,12 @@ This module is a test file for the 0-add_integer module
     # Test with single numbers
     >>> add_integer(5)
     103
-
-    # Test with negative numbers and floats
-    >>> add_integer(-2, 2.3)
-    0
-
+    
     # Test with positive numbers and floats
     >>> add_integer(4, 2.3)
+    6
+
+    >>> add_integer(2.3, 4)
     6
 
     # Test with strings
