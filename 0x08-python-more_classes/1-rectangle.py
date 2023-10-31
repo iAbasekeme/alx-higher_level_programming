@@ -8,6 +8,19 @@ class Rectangle:
     """
 
     def __init__(self, width=0, height=0):
+        """The init method that initializes each time an
+            instance is created
+
+        Args:
+            width (int, optional): width of the rectangle. Defaults to 0.
+            height (int, optional): height of the rectangle. Defaults to 0.
+
+        Raises:
+            TypeError: width must be an integer
+            ValueError: width must be >= 0
+            TypeError: height must be an integer
+            ValueError: height must be >= 0
+        """
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
         if width < 0:
