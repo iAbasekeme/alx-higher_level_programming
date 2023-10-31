@@ -1,0 +1,27 @@
+# Test the add_integer module
+
+>>> add = __import__('0-add_integer').add_integer
+
+# Test with positive numbers
+>>> add(2,3)
+5
+
+# Test with negative numbers and floats
+>>> add(-2, 2.3)
+0.2999999999999998
+
+# Test with negative numbers
+>>> add(-2, -3)
+0
+
+# Test with negative and positive numbers
+>>> add(-2, 3)
+1
+
+# Test with string and integer
+>>> add("Ret", 9)
+TypeError: b must be an integer
+
+>>> add(9, 'tea')
+TypeError: a must be an integer
+
