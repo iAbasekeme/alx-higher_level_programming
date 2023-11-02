@@ -115,9 +115,7 @@ class Rectangle:
 
         if rect1 is rect2:
             return rect_1
-
         mx = max(rect1, rect2)
-
         if mx == rect1:
             return rect_1
         else:
