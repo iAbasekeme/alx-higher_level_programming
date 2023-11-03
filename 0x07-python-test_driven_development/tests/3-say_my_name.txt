@@ -13,15 +13,14 @@ This section provides an overview of the testing scenarios for the `say_my_name`
     >>> say_name(5, "bobby")
     Traceback (most recent call last):
     ...
-    TypeError: first_name must be a string or last_name must be a string
+    TypeError: first_name must be a string
 
     >>> say_name(5, 7)
     Traceback (most recent call last):
     ...
-    TypeError: first_name must be a string or last_name must be a string
+    TypeError: first_name must be a string
 
     >>> say_name("john", 90000)
     Traceback (most recent call last):
     ...
-    TypeError: first_name must be a string or last_name must be a string
-    
+    TypeError: last_name must be a string
