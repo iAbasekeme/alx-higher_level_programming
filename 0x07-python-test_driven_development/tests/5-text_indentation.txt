@@ -1,0 +1,12 @@
+This module tests if a particular punctuation is present in the text and then go to a new line.
+===============================================================================================
+
+This section provides an overview of the testing scenarios for the `text_indentation` function.
+-----------------------------------------------------------------------------------------------
+
+    >>> text_indent = __import__('5-text_indentation').text_indentation
+
+    >>> text_indent(100)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
