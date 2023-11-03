@@ -1,0 +1,34 @@
+This module tests for the ``2-matrix_divided`` function
+=========================================================
+
+Using ``matrix_divided``
+-----------------------
+
+This module is a test file for the 0-add_integer module
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix = [[1, 2, 3],[4, 5, 6]]
+
+    # Test with incomplete argument
+    >>> matrix_divided(matrix)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+    >>> matrix_divided(3)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+    >>> matrix_divided(matrix, '4')
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+    >>> matrix_divided(matrix, '4')
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+    
+
