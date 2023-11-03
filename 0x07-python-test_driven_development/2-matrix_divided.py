@@ -19,7 +19,9 @@ def matrix_divided(matrix, div):
 
     Returns: A new list all divided by the div
     """
-    if not all(isinstance(row, list) and all(isinstance(sec_row, (int, float))for sec_row in row) for row in matrix):
+    if not all(isinstance(row, list) and
+               all(isinstance(sec_row, (int, float))
+                   for sec_row in row) for row in matrix):
         raise TypeError(
             'matrix must be a matrix (list of lists) of integers/floats')
 
