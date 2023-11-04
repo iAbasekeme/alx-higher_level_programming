@@ -19,4 +19,14 @@ This section provides an overview of the testing scenarios for the `say_my_name`
     Traceback (most recent call last):
     ...
     ValueError: size must be >= 0
+    
+    >>> print_square("")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    >>> print_square(10, 78)
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() takes 1 positional argument but 2 were given
 
