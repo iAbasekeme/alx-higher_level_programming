@@ -14,17 +14,17 @@ This module is a test file for the 0-add_integer module
     # Test with incomplete argument
     >>> matrix_divided(matrix)
     Traceback (most recent call last):
-    ...
+        ...
     TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
     >>> matrix_divided(3)
     Traceback (most recent call last):
-    ...
+        ...
     TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
     >>> matrix_divided(matrix, '4')
     Traceback (most recent call last):
-    ...
+        ...
     TypeError: div must be a number
 
     >>> matrix_divided(matrix, 4)
@@ -32,16 +32,15 @@ This module is a test file for the 0-add_integer module
     
     >>> matrix_divided(matrix, 0)
     Traceback (most recent call last):
-    ...
+        ...
     ZeroDivisionError: division by zero
 
     >>> matrix_divided(matrix_wrong, 2)
     Traceback (most recent call last):
-    ...
+        ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
     >>> matrix_divided(empty_matrix, 0)
     Traceback (most recent call last):
-    ...
+        ...
     ZeroDivisionError: division by zero
-    
