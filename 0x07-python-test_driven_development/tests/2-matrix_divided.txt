@@ -8,6 +8,7 @@ This module is a test file for the 0-add_integer module
 
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
     >>> matrix = [[1, 2, 3],[4, 5, 6]]
+    >>> matrix_wrong = [['2', 2, 3],['4', 5, 6]]
 
     # Test with incomplete argument
     >>> matrix_divided(matrix)
@@ -25,10 +26,15 @@ This module is a test file for the 0-add_integer module
     ...
     TypeError: div must be a number
 
-    >>> matrix_divided(matrix, '4')
+    >>> matrix_divided(matrix, 4)
+    [[0.25, 0.5, 0.75], [1.0, 1.25, 1.5]]
+    
+    >>> matrix_divided(matrix, 0)
     Traceback (most recent call last):
     ...
-    TypeError: div must be a number
+    ZeroDivisionError: division by zero
 
-    
-
+    >>> matrix(matrix_wrong, 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
