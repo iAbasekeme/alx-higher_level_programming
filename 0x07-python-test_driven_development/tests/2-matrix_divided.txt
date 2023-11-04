@@ -10,6 +10,7 @@ This module is a test file for the 0-add_integer module
     >>> matrix = [[1, 2, 3],[4, 5, 6]]
     >>> matrix_wrong = [['2', 2, 3],['4', 5, 6]]
     >>> empty_matrix = [[],[]]
+    >>> out_of_length_matrix = [[1, 2, 3],[4, 5, 6, 7]]
 
     # Test with incomplete argument
     >>> matrix_divided(matrix)
@@ -44,3 +45,8 @@ This module is a test file for the 0-add_integer module
     Traceback (most recent call last):
         ...
     ZeroDivisionError: division by zero
+
+    >>> matrix_divided(out_of_length_matrix, 4)
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size
