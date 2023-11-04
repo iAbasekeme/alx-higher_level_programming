@@ -29,3 +29,6 @@ This section provides an overview of the testing scenarios for the `say_my_name`
     Traceback (most recent call last):
     ...
     TypeError: first_name must be a string
+
+    >>> say_name("John", "Smith")
+    My name is John Smith
