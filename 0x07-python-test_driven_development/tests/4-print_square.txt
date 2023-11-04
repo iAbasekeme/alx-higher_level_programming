@@ -29,4 +29,3 @@ This section provides an overview of the testing scenarios for the `say_my_name`
     Traceback (most recent call last):
     ...
     TypeError: print_square() takes 1 positional argument but 2 were given
-
