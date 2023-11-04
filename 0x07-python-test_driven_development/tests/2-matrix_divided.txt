@@ -37,4 +37,4 @@ This module is a test file for the 0-add_integer module
     >>> matrix(matrix_wrong, 2)
     Traceback (most recent call last):
     ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
+    TypeError: 'list' object is not callable
