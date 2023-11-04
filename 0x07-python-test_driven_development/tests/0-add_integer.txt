@@ -62,4 +62,11 @@ This is an example text file in reStructuredText format.  First import
 	Traceback (most recent call last):
 	...
 	TypeError: a must be an integer
-    
+
+	>>> add_integer(float('nan'),1)
+	...
+	ValueError: cannot convert float NaN to integer
+
+	>>> add_integer(float('inf'),1)
+	...
+	OverflowError: cannot convert float infinity to integer
