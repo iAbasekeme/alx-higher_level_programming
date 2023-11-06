@@ -6,7 +6,7 @@ from, the specified class ; otherwise False.
 
 
 def is_kind_of_class(obj, a_class):
-    """This function returns True or false if an object is an instance 
+    """This function returns True or false if an object is an instance
 
     Args:
         obj (obj): object
