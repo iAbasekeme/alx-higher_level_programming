@@ -15,7 +15,9 @@ a class that inherited (directly or indirectly) from the specified class
     """
     return issubclass(type(obj), a_class) and type(obj) is not a_class
 # This function uses the issubclass() function
-# to check if the object's class (retrieved using type(obj)) is a subclass of the
-# specified class a_class. It also checks if the object's class is not exactly the
+# to check if the object's class (retrieved using type(obj))
+# is a subclass of the
+# specified class a_class. It also checks if the object's
+# class is not exactly the
 # same as a_class (using type(obj) is not a_class)
 # to ensure that it's not an instance of the specified class itself.
