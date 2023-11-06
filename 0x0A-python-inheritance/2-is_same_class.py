@@ -10,6 +10,6 @@ def is_same_class(obj, a_class):
 
     Args:
         obj (instance): instance of the class
-        a_class (class): class 
+        a_class (class): class
     """
     return type(obj) is a_class
