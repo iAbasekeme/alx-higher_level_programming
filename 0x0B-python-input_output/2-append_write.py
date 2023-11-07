@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This module holds a functio that appends to a file
 """
 
