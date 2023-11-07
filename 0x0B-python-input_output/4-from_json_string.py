@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This module holds a function that
 returns obj represented by JSON
 """
