@@ -8,6 +8,6 @@ def from_json_string(my_str):
     """Returns the an obj from JSON
 
     Args:
-        my_str (string): String to be converted 
+        my_str (string): String to be converted
     """
     return json.loads(my_str)
