@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This module hold sa function that wrotes to a file
 """
 
