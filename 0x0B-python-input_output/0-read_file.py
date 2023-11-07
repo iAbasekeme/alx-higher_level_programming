@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This module handles a function that reads a file
 """
 
