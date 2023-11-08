@@ -12,6 +12,13 @@ class Rectangle(BaseGeometry):
     """
 
     def __init__(self, width, height):
+        """A function that validates a height
+        and width of a rectangle
+
+        Args:
+            width (int): Width
+            height (int): Height
+        """
         super().integer_validator('width', width)
         super().integer_validator('height', height)
         self.__width = width
