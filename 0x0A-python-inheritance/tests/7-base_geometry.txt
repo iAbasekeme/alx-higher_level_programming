@@ -1,0 +1,40 @@
+The ``7-base_geometry`` module
+========================
+
+using ``BaseGeometry``
+------------------
+
+    >>> Geometry = __import__('7-base_geometry').BaseGeometry
+
+    >>> base = Geometry()
+    >>> base.integer_validator()
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+    >>> base.integer_validator('yu', 'uy')
+    Traceback (most recent call last):
+    TypeError: yu must be an integer
+
+    >>> base.integer_validator('yu', [7.7])
+    Traceback (most recent call last):
+    TypeError: yu must be an integer
+
+    >>> base.integer_validator('yu', (9))
+
+    >>> base.integer_validator((9), (9))
+
+    >>> base.integer_validator(9)
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+    
+    >>> base.integer_validator('maronni', 0)
+    Traceback (most recent call last):
+    ValueError: maronni must be greater than 0
+
+    >>> base.integer_validator("float", 1.0)
+    Traceback (most recent call last):
+    TypeError: float must be an integer
+
+    >> base.integer_validator("None", None)
+    Traceback (most recent call last):
+    TypeError: None must be an integer
