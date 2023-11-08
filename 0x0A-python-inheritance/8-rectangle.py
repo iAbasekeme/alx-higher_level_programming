@@ -12,7 +12,7 @@ class Rectangle(BaseGeometry):
     """
 
     def __init__(self, width, height):
-        """A function that validates a height
+        """A constructor function that validates a height
         and width of a rectangle
 
         Args:
