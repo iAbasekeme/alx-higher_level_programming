@@ -46,6 +46,10 @@ using ``BaseGeometry``
     Traceback (most recent call last):
     TypeError: negative_float must be an integer
 
+    >>> base.area(0)
+    Traceback (most recent call last):
+    TypeError: area() takes 1 positional argument but 2 were given
+
     >>> base.integer_validator("boolean", True)
     Traceback (most recent call last):
     TypeError: boolean must be an integer
@@ -61,3 +65,7 @@ using ``BaseGeometry``
     base.integer_validator(-2, 'maronni')
     Traceback (most recent call last):
     TypeError: -2 must be an integer
+
+    >>> base.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
