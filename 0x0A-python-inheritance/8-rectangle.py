@@ -5,6 +5,11 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
+    """A subclass of a superclass
+
+    Args:
+        BaseGeometry (class): A class that validates it's attributes
+    """
 
     def __init__(self, width, height):
         super().integer_validator('width', width)
