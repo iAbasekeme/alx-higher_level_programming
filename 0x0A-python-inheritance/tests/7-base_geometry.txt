@@ -7,6 +7,7 @@ using ``BaseGeometry``
     >>> Geometry = __import__('7-base_geometry').BaseGeometry
 
     >>> base = Geometry()
+
     >>> base.integer_validator()
     Traceback (most recent call last):
     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
@@ -38,3 +39,25 @@ using ``BaseGeometry``
     >> base.integer_validator("None", None)
     Traceback (most recent call last):
     TypeError: None must be an integer
+
+    >>> base.integer_validator("integer", 2795)
+
+    >>> base.integer_validator("negative_float", -1.0)
+    Traceback (most recent call last):
+    TypeError: negative_float must be an integer
+
+    >>> base.integer_validator("boolean", True)
+    Traceback (most recent call last):
+    TypeError: boolean must be an integer
+
+    >>> base.integer_validator("list", [0, 1, 2, 3])
+    Traceback (most recent call last):
+    TypeError: list must be an integer
+
+    >>> base.integer_validator("set", set([0, 1, 2, 3]))
+    Traceback (most recent call last):
+    TypeError: set must be an integer
+
+    base.integer_validator(-2, 'maronni')
+    Traceback (most recent call last):
+    TypeError: -2 must be an integer
