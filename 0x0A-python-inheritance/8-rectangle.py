@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""This is amodule that holds a new class
-"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+"""This is a module that holds a new class
+"""
 
 
 class Rectangle(BaseGeometry):
