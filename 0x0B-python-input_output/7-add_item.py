@@ -18,6 +18,3 @@ def additems():
     new_items = existing_json + args
 
     save_to_json(new_items, "add_item.json")
-
-
-additems()
