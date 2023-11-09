@@ -18,4 +18,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """custom str method for print the rectangle"""
-        return "[square] " + str(self.__size) + "/" + str(self.__size)
+        return f"[Square] {self.__size}/{self.__size}"
