@@ -26,7 +26,7 @@ class Rectangle(BaseGeometry):
 
         def __str__(self):
             """custom str method for print the rectangle"""
-            return "[Rectangle]" + str(self.__width) + "/" + str(self.__height)
+            return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
 
         def area(self):
             """computes area of the retangle"""
