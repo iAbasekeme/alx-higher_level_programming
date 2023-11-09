@@ -24,10 +24,10 @@ class Rectangle(BaseGeometry):
         self.__width = width
         self.__height = height
 
-        def __str__(self):
-            """custom str method for print the rectangle"""
-            return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
+    def __str__(self):
+        """custom str method for print the rectangle"""
+        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
 
-        def area(self):
-            """computes area of the retangle"""
-            return self.__height * self.__width
+    def area(self):
+        """computes area of the retangle"""
+        return self.__height * self.__width
