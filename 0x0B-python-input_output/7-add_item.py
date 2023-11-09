@@ -8,9 +8,8 @@ args = sys.argv[1:]
 print(args)
 
 existing_json = []
-existing_json.append(load_from_json("add_item.json"))
+existing_json = load_from_json("add_item.json")
 
-with open(existing_json, 'a') as file:
-    new_items = file.write(args)
+new_items = existing_json + args
 
 save_to_json(new_items, "add_item.json")
