@@ -15,3 +15,7 @@ class Square(Rectangle):
         super().integer_validator("size", size)
         self.__size = size
         super().__init__(size, size)
+
+    def __str__(self):
+        """custom str method for print the rectangle"""
+        return "[square] " + str(self.__size) + "/" + str(self.__size)
