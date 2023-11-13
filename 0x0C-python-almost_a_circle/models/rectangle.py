@@ -94,6 +94,8 @@ class Rectangle(Base):
             print("{}".format(" " * self.x + '#' * c))
 
     def update(self, *args, **kwargs):
+        """An update method to update attribute of a class
+        """
         if args:
             if len(args) >= 1:
                 self.id = args[0]
@@ -114,4 +116,6 @@ class Rectangle(Base):
             self.y = kwargs.get('y', self.y)
 
     def __str__(self):
+        """A str method to print to stdout
+        """
         return f"{self.__class__.__name__} ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
