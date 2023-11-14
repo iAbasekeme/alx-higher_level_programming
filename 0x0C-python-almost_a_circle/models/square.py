@@ -28,7 +28,7 @@ class Square(Rectangle):
     def __str__(self):
         """A str method to print to stdout
         """
-        return f"[{self.__class__.__name__}]" \
+        return f"[{self.__class__.__name__}]"\
                f" ({self.id}) {self.x}/{self.y} - {self.width}"
 
     def update(self, *args, **kwargs):
