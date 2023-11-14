@@ -128,5 +128,5 @@ class Rectangle(Base):
     def to_dictionary(self):
         """A method that returns the dict represention of attributes
         """
-        return {'x': self.id, 'y': self.y, 'id': self.id,
+        return {'x': self.x, 'y': self.y, 'id': self.id,
                 'height': self.height, 'width': self.width}
