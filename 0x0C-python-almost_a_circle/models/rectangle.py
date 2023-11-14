@@ -120,6 +120,12 @@ class Rectangle(Base):
             c = self.width
             print("{}".format(" " * self.x + '#' * c))
 
+    def __str__(self):
+        """A str method to print to stdout
+        """
+        return f"[{self.__class__.__name__}] "\
+               f" ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+
     def update(self, *args, **kwargs):
         """An update method to update attribute of a class
         """
@@ -141,9 +147,3 @@ class Rectangle(Base):
             self.height = kwargs.get('height', self.height)
             self.x = kwargs.get('x', self.x)
             self.y = kwargs.get('y', self.y)
-
-    def __str__(self):
-        """A str method to print to stdout
-        """
-        return f"[{self.__class__.__name__}] "\
-               f" ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
