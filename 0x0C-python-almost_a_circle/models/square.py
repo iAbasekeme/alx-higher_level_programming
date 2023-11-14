@@ -48,4 +48,4 @@ class Square(Rectangle):
         """A str method to print to stdout
         """
         return f"[{self.__class__.__name__}]" \
-               f"({self.id}) {self.x}/{self.y} - {self.width}"
+               f" ({self.id}) {self.x}/{self.y} - {self.width}"
