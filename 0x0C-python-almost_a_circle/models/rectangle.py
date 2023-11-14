@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A new module that inherits form Base
+"""A new module that inherits from Base class
 """
 from models.base import Base
 
@@ -121,5 +121,5 @@ class Rectangle(Base):
     def __str__(self):
         """A str method to print to stdout
         """
-        return f"[{self.__class__.__name__}]
-        ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return f"[{self.__class__.__name__}] "\
+               f"({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
