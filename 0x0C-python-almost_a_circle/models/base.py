@@ -44,6 +44,8 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """A staticmethod that coverts json to string
+        """
         if json_string is None:
             return []
         to_string = json.loads(json_string)
