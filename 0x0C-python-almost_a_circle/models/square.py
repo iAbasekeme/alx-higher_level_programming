@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is a square module
+"""This is a square module that inherits from rectangle class
 """
 from models.rectangle import Rectangle
 
@@ -47,5 +47,5 @@ class Square(Rectangle):
     def __str__(self):
         """A str method to print to stdout
         """
-        return f"[{self.__class__.__name__}]
-        ({self.id}) {self.x}/{self.y} - {self.width}"
+        return f"{[self.__class__.__name__]}" \
+               f"({self.id}) {self.x}/{self.y} - {self.width}"
