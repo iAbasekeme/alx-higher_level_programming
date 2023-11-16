@@ -2,6 +2,7 @@
 """A new module for a class Base
 """
 import json
+# from models.rectangle import Rectangle
 
 
 class Base:
@@ -50,3 +51,12 @@ class Base:
             return []
         to_string = json.loads(json_string)
         return to_string
+
+    @classmethod
+    def create(cls, **dictionary):
+        if cls.__name__ == 'Rectangle':
+            dummy_instance = cls(1, 2)
+        if cls.__name__ == 'Square':
+            dummy_instance = cls(1, 2)
+        dummy_instance.update(**dictionary)
+        return dummy_instance
