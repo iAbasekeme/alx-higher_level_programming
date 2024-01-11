@@ -1,4 +1,4 @@
-// #!/usr/bin/node
+#!/usr/bin/node
 
 const process = require('process');
 if (!process.argv[2]) {
