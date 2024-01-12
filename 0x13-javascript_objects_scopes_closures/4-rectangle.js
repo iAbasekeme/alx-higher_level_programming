@@ -17,6 +17,7 @@ class Rectangle {
       console.log(row);
     }
   }
+
   rotate () {
     if (this.width && this.height) {
       [this.width, this.height] = [this.height, this.width];
