@@ -7,7 +7,5 @@ exports.esrever = function (list) {
       storage.push(list[i]);
     }
     return storage;
-  } else {
-    return;
   }
-}
+};
