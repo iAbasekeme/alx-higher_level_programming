@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-A script that lists all states from \
-    the database hbtn_0e_0_usa using argv
+A script that lists all states from
+the database hbtn_0e_0_usa using argv
 """
 
 from sys import argv
@@ -13,7 +13,8 @@ if __name__ == "__main__":
     cur = db.cursor()
     try:
         cur.execute(
-            "SELECT * FROM states WHERE name = %s ORDER BY states.id", argv[4])
+            "SELECT * FROM states WHERE \
+                name LIKE '{}' ORDER BY states.id".format(argv[4]))
         rows = cur.fetchall()
         for row in rows:
             print(row)
