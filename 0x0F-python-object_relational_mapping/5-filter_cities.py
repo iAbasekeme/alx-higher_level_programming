@@ -12,11 +12,12 @@ if __name__ == "__main__":
         host='localhost', user=argv[1], passwd=argv[2], db=argv[3], port=3306)
     cur = db.cursor()
     try:
-        query = "SELECT * cities.name \
+        query = "SELECT cities.name \
             FROM cities \
-            LEFT JOIN states \
-            ON states.id = cities.state_id"
-        cur.execute(query)
+            INEER JOIN states \
+            ON states.id = cities.state_id WHERE states.name = %s \
+            ORDER BY cities.id ASC"
+        cur.execute(query, argv[4])
         rows = cur.fetchall()
         for row in rows:
             print(row)
