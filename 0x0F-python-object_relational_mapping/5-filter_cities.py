@@ -14,7 +14,8 @@ if __name__ == "__main__":
     cur = db.cursor()
     try:
         cur.execute("SELECT cities.name FROM cities \
-            INNER JOIN states ON states.id = cities.state_id WHERE states.name = %s", (state_name,))
+            INNER JOIN states ON states.id = cities.state_id \
+            WHERE states.name = %s", (state_name,))
         rows = cur.fetchall()
         list_cities = []
         for row in rows:
