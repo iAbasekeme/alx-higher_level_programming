@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-A script that lists all states from the database hbtn_0e_0_usa using argv:
+A script that lists all states from \
+    the database hbtn_0e_0_usa using argv
 """
 
 from sys import argv
