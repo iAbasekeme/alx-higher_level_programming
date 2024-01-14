@@ -11,14 +11,14 @@ db = MySQLdb.connect(
 
 cur = db.cursor()
 try:
-  cur.execute("SELECT * FROM states ORDER BY id ASC")
-  rows = cur.fetchall()
-  for row in rows:
-    print(row)
-  cur.close()
-  db.close()
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+    cur.close()
+    db.close()
 except Exception:
-  pass
+    pass
 
 if __name__ == "__main__":
-  main()
+    main()
