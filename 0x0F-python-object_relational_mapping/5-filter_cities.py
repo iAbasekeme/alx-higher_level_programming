@@ -14,7 +14,7 @@ if __name__ == "__main__":
     try:
         query = "SELECT cities.name \
             FROM cities \
-            INEER JOIN states \
+            INNER JOIN states \
             ON states.id = cities.state_id WHERE states.name = %s \
             ORDER BY cities.id ASC"
         cur.execute(query, argv[4])
