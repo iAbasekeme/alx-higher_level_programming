@@ -14,7 +14,7 @@ if __name__ == "__main__":
     try:
         cur.execute(
             "SELECT * FROM states WHERE \
-                name LIKE '{}' ORDER BY states.id".format(argv[4] + '%',))
+                name LIKE BINARY '{}' ORDER BY states.id".format(argv[4]))
         rows = cur.fetchall()
         for row in rows:
             print(row)
