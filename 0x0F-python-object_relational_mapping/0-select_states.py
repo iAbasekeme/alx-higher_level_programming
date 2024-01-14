@@ -21,4 +21,6 @@ except Exception:
     pass
 
 if __name__ == "__main__":
+    """This module shouldn't execute if imported
+    """
     main()
