@@ -10,7 +10,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    """A class that declares a mapping for a database using declartive 
+    """A class that declares a mapping for a database using declartive
     """
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, autoincrement=True,
