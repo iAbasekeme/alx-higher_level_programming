@@ -7,11 +7,12 @@ from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine(
-    'mysql+mysqldb://${argv[1]}:${argv[2]}@localhost:3306/${argv[3]}')
+if __name__ == "__main__":
+    engine = create_engine(
+        'mysql+mysqldb://${argv[1]}:${argv[2]}@localhost:3306/${argv[3]}')
 
-Session = sessionmaker(bind=engine)
-session = Session()
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-for instance in session.query(State).order_by(states.id):
-    print(f"{instance.id}: {instance.name}")
+    for instance in session.query(State).order_by(states.id):
+        print(f"{instance.id}: {instance.name}")
