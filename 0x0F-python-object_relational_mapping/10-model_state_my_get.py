@@ -20,3 +20,5 @@ if __name__ == "__main__":
     if state:
         for states in state:
             print(f"{states.id}")
+    else:
+        print('Not found')
