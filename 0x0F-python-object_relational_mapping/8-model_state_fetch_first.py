@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 A script that lists all State objects from the database hbtn_0e_6_usa
+fetch all states from the database before displaying the result
 """
 from model_state import Base, State
 from sys import argv
