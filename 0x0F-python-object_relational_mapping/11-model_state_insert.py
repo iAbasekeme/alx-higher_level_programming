@@ -14,12 +14,13 @@ if __name__ == "__main__":
         .format(argv[1], argv[2], argv[3]))
 
     Base.metadata.create_all(engine)
-    Session = sessionmaker(bind=engine)
+    Session = sessionmaker(autoflush=False, autocommit=False, bind=engine)
     session = Session()
     state = State(name='Louisiana')
+
     session.add(state)
 
     session.commit()
+    session.close()
     added_state = session.quey(State).filter(State.name == 'Louisiana').first()
-    if added_state:
-        print(f"{added_state.id}")
+    print(f"{added_state.id}")
