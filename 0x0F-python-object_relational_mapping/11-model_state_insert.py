@@ -22,7 +22,6 @@ if __name__ == "__main__":
 
     session.commit()
 
-    # added_state = session.quey(State).filter(State.name == 'Louisiana').first()
     print(state.id)
 
     session.close()
