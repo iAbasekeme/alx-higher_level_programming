@@ -14,7 +14,7 @@ if __name__ == "__main__":
         .format(argv[1], argv[2], argv[3]))
 
     Base.metadata.create_all(engine)
-    Session = sessionmaker(autoflush=False, autocommit=False, bind=engine)
+    Session = sessionmaker(autoflush=False, bind=engine)
     session = Session()
     state = State(name='Louisiana')
 
