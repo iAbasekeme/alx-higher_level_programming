@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A script that at prints all City
+A script that at prints all City \
 objects from the database hbtn_0e_14_usa
 """
 from model_state import Base, State
