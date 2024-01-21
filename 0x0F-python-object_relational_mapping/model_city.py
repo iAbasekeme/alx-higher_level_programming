@@ -7,6 +7,9 @@ from sqlalchemy import *
 
 
 class City(Base):
+    """
+    A city class
+    """
     __tablename__ = 'cities'
     id = Column(Integer, Primary_Key=True, autoincrement=True)
     name = Column(String(128), nullable=False)
