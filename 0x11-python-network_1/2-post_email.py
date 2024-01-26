@@ -13,6 +13,7 @@ if __name__ == "__main__":
     # Encode the data for a POST request
     data = urllib.parse.urlencode(data)
     data = data.encode('utf-8')  # Data should be bytes
-    with urllib.request.urlopen(url, data) as response:
+    req = urllib.request.Request(url, data)
+    with urllib.request.urlopen(req) as response:
         result = response.read()
         print(f"Your email is: {format(result.decode('utf-8'))}")
