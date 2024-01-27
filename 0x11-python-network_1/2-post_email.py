@@ -8,10 +8,11 @@ from sys import argv
 if __name__ == "__main__":
     url = argv[1]
     email = argv[2]
+    value = {'email': email}
     if len(argv) > 2:
         # Encode the data for a POST request
-        data = parse.urlencode({'email': email}).encode('utf-8')
-        req = request.Request(url, {'email': email})
+        data = parse.urlencode(value).encode('utf-8')
+        req = request.Request(url, data)
         with request.urlopen(req) as response:
             result = response.read()
             print(result.decode('utf-8'))
