@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """A script that sends a request and displays the X-Request-Id
 """
-import request
+import requests
 from sys import argv
 
 if __name__ == "__main__":
