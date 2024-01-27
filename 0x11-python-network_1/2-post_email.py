@@ -2,18 +2,16 @@
 """a script that sends a POST request to the passed URL \
         with email as a parameter
 """
-import urllib.request
-import urllib.parse
-import sys
+from urllib import parse, request
+from sys import argv
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-    email = sys.argv[2]
-    data = {'email': email}
-    if len(sys.argv) > 2:
+    url = argv[1]
+    email = argv[2]
+    if len(argv) > 2:
         # Encode the data for a POST request
-        data = urllib.parse.urlencode(data).encode('utf-8')
-        req = urllib.request.Request(url, data)
-        with urllib.request.urlopen(req) as response:
+        data = parse.urlencode({'email': email}).encode('utf-8')
+        req = request.Request(url, {'email': email})
+        with request.urlopen(req) as response:
             result = response.read()
-            print(f"Your email is: {result.decode('utf-8')}")
+            print(result.decode('utf-8'))
