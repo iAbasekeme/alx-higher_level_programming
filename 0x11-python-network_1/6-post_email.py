@@ -6,5 +6,6 @@ from sys import argv
 
 if __name__ == "__main__":
     url = argv[1]
-    data = argv[2]
+    email = argv[2]
+    data = {'email': email}
     print(requests.post(url, data).text)
