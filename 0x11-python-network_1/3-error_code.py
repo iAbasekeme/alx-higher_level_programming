@@ -3,9 +3,11 @@
 """
 
 from urllib import request, error
+from sys import argv
 
 if __name__ == "__main__":
     try:
+        url = argv[1]
         with request.urlopen(url) as response:
             html = response.read()
             print(html.decode('utf-8'))
