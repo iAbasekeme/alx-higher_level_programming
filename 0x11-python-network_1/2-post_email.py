@@ -13,7 +13,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 2:
         # Encode the data for a POST request
         data = urllib.parse.urlencode(data).encode('utf-8')
-        req = request.Request(url, data)
+        req = urllib.request.Request(url, data)
         with urllib.request.urlopen(req) as response:
             result = response.read()
             print(f"Your email is: {result.decode('utf-8')}")
