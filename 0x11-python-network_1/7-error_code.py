@@ -7,13 +7,8 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    try:
-        url = argv[1]
-        r = requests.get(url)
-        response.raise_for_status()
-    except requests.exceptions.RequestException as e:
-        if hasattr(e, 'response') and e.response is \
-                not None and e.response.status_code >= 400:
-            print(f"Error code: {e.response.status_code}")
-        else:
-            print(f"An error occurred: {e}")
+    url = argv[1]
+    r = requests.get(url)
+    if r.status_code >= 400:
+        print("Error code: {}".format(r.status_code))
+    print(r.text)
