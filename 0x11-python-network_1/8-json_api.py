@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Docs
 """
-from urllib import requests
+import requests
 from sys import argv
 
 if __name__ == "__main__":
