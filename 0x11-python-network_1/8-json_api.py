@@ -5,9 +5,9 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    data = argv[1]
-    q = data if len(sys.argv) > 1 else ""
-    requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
+    q = argv[1] if len(argv) > 1 else ""
+    data = {'q': q}
+    requests.post('http://0.0.0.0:5000/search_user', data=data)
 
     json_data = response.json()
     if json_data:
