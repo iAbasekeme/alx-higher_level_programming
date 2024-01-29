@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 """Docs
 """
+import requests
 from sys import argv
+from requests.auth import HTTPBasicAuth
 
 if __name__ == "__main__":
 
-    api_url = f'https://api.github.com/user/{argv[1]}'
+    api_url = f'https://api.github.com/user'
 
     # Set up Basic Authentication using the personal access token
     auth = HTTPBasicAuth(argv[1], argv[2])
