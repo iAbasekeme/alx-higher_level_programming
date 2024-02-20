@@ -5,9 +5,7 @@ var arg = process.argv[1]
 // Synchronously read the file
 fs.readFile(arg, 'utf8', (err, data) => {
     if (err) {
-    // Handle the errors
-    	return console.error(err)
+        return console.error(err)
     }
-     console.log(data)
+    console.log(data)
 })
-
