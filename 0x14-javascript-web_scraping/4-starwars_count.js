@@ -10,7 +10,7 @@ request(arg, (error, response, body) => {
     let count = 0;
     for (let res = 0; res < data.length; res++) {
       if (data[res].characters.includes('https://swapi-api.alx-tools.com/api/people/18/')) {
-	      count++;
+        count++;
       }
     }
     console.log(count);
