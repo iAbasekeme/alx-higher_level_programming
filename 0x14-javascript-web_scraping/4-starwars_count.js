@@ -8,8 +8,8 @@ request(arg, (error, response, body) => {
   } else {
     const data = JSON.parse(body).results;
     let count = 0;
-    for (let res of data) {
-      if (res.characters.includes('https://swapi-api.alx-tools.com/api/people/18/')) {
+    for (const res in data) {
+      if (data[res].characters.includes('https://swapi-api.alx-tools.com/api/people/18/')) {
         count++;
       }
     }
