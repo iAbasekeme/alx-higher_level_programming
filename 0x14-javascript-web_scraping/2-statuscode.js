@@ -3,5 +3,6 @@ const request = require('request')
 const arg = process.argv[2]
 
 request(arg, (response) => {
-  console.log(response.statusCode);
+  console.log(response.statusCode)
 })
+
