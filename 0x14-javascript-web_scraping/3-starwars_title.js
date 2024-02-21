@@ -1,11 +1,13 @@
 #!/usr/bin/node
-const { url } = require('inspector');
 const request = require('request');
 const arg = process.argv[2];
 
-url = `https://swapi-api.alx-tools.com/api/films/${arg}`;
+const url = `https://swapi-api.alx-tools.com/api/films/${arg}`;
 request(url, (error, response, body) => {
-  if (error)
-    console.error(error)
-  console.log(response);
-})
+  if (error) {
+    console.error(error);
+  }
+  const data = JSON.parse(body);
+  console.log(data.title);
+});
+
