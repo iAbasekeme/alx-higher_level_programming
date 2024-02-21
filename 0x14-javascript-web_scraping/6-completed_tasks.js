@@ -7,7 +7,7 @@ request(url, (error, response, body) => {
     console.error(error);
   }
   const data = JSON.parse(body);
-  let emptyObject = {};
+  const emptyObject = {};
   for (let dat = 0; dat < data.length; dat++) {
     if (data[dat].completed) {
       emptyObject[data[dat].userId] = (emptyObject[data[dat].userId] || 0) + 1;
