@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const request = require('request');
 const arg = process.argv[2];
-const characterId = 18
+const characterId = '18';
 
 request(arg, (error, response, body) => {
   if (error) {
