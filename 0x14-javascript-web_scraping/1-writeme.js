@@ -5,6 +5,6 @@ const stringPath = process.argv[3]
 
 fs.writeFile(arg, stringPath, 'utf-8', (err) => {
   if (err) {
-    return console.error(err)
+    return console.error(err);
   }
 })
