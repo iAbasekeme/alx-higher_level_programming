@@ -10,9 +10,9 @@ request(page, (error, response, body) => {
   } else {
     const data = response.body;
     fs.writeFile(file, data, 'utf-8', (err) => {
-	if (err) {
-		console.error(err);
-	}
-    })
+      if (err) {
+        console.error(err);
+      }
+    });
   }
-})
+});
