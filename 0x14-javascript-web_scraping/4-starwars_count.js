@@ -9,7 +9,7 @@ request(arg, (error, response, body) => {
   } else {
     const data = JSON.parse(body).results;
     let count = 0;
-    for (let res = 0; res < data; res++) {
+    for (let res = 0; res < data.length; res++) {
       if (data[res].characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)) {
         count++;
       }
